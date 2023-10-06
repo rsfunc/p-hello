@@ -1,4 +1,4 @@
 #[tokio::main]
 async fn main() {
-    single::startup::hello()
+    p_hello::startup::hello()
 }
