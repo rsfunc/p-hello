@@ -1,0 +1,19 @@
+[package]
+name = "p-hello"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "only"
+
+[dependencies]
+tokio = { version = "1.32", features = ["full"] }
+
+[dev-dependencies]
+
+[profile.release]
+codegen-units = 1
